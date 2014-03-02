@@ -1,0 +1,63 @@
+.off-canvas-wrap,
+.inner-wrap
+  height: 100%
+  min-height: 100%
+
+.nav-icon
+  width: 2.5rem
+  height: 2.5rem
+  border-left: solid 1px #4E4E4E
+  box-shadow: -1px 0 0 #1A1A1A
+
+.container
+  max-width: 1440px
+  margin-left: auto
+  margin-right: auto
+
+header
+  background-color: #000000
+
+.top-bar-section ul li > a
+  border-left: solid 1px #4E4E4E
+  box-shadow: -1px 0 0 #1A1A1A
+
+.nav-wrap
+  background-color: $topbar-bg-color
+
+.upper-nav
+  padding: 15px 0 15px 0
+  .logo
+    display: block
+    margin-left: auto
+    margin-right: auto
+    @media #{$large-up}
+      float: left
+
+#desktop-search
+  margin-top: 35px
+  .button,
+  input
+    margin-bottom: 0
+
+.ribbon
+  position: relative
+  width: 200px
+  height: 20px
+  background-color: #EB5D18
+  text-align: center
+  color: #FFFFFF
+  margin: 20px 20px 30px 20px
+  padding: 6px 10px 22px 10px
+  text-transform: uppercase
+  font-size: 0.8em
+.ribbon:after
+  height: 0px
+  width: 0px
+  border-top: 12px solid #6D2D00
+  border-left: 12px solid transparent
+  border-right: 12px solid #6D2D00
+  border-bottom: 12px solid transparent
+  content: " "
+  position: absolute
+  bottom: -24px
+  left: 0
