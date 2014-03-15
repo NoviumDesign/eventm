@@ -1,7 +1,34 @@
+// General
+
+$orange-color: #FC5F00
+$green-color: #0EA42C
+$pink-color: #E42377
+$blue-color: #2284CB
+$grey-color: #565455
+$darkgrey-color: #232321
+$footerfont-color: #4A4A4A
+
 .off-canvas-wrap,
 .inner-wrap
   height: 100%
   min-height: 100%
+
+.hero
+  background: url('http://placehold.it/1440x450')
+
+  h1
+    font-size: 6em
+    font-weight: 700
+    line-height: 1em
+    color: #FFFFFF
+    padding-top: 80px
+    padding-bottom: 50px
+
+h1
+  font-size: 3em
+  font-weight: 700
+
+// Nav
 
 .nav-icon
   width: 2.5rem
@@ -22,7 +49,29 @@ header
   box-shadow: -1px 0 0 #1A1A1A
 
 .nav-wrap
-  background-color: $topbar-bg-color
+  background: -webkit-linear-gradient($grey-color $darkgrey-color) /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($grey-color, $darkgrey-color) /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($grey-color, $darkgrey-color) /* For Firefox 3.6 to 15 */
+  background: linear-gradient($grey-color, $darkgrey-color) /* Standard syntax (must be last) */
+
+  .top-bar
+
+    .top-bar-section ul li > a
+      font-size: 1em
+      font-weight: 700
+      color: grey
+      padding-left: 20px
+      padding-right: 20px
+      text-transform: uppercase
+
+    .event
+      box-shadow: inset 0 5px 0px #FC5F00
+
+    .tickets
+      box-shadow: inset 0 5px 0px $pink-color
+
+    .conference
+      box-shadow: inset 0 5px 0px $green-color
 
 .upper-nav
   padding: 15px 0 15px 0
@@ -38,6 +87,18 @@ header
   .button,
   input
     margin-bottom: 0
+    height: 30px
+
+  .button
+    background-color: #fc5f00
+    border-top-right-radius: 3px
+    border-bottom-right-radius: 3px
+
+  input
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+
+// Ribbon
 
 .ribbon
   position: relative
@@ -50,6 +111,7 @@ header
   padding: 6px 10px 22px 10px
   text-transform: uppercase
   font-size: 0.8em
+
 .ribbon:after
   height: 0px
   width: 0px
@@ -61,3 +123,210 @@ header
   position: absolute
   bottom: -24px
   left: 0
+
+.footerribbon
+  padding-top: 20px
+
+  .footer
+    width: 88%
+    height: 30px
+    font-size: 1.2em
+    color: #FFFFFF
+    font-weight: 500
+    padding-top: 0
+    margin-bottom: 40px
+
+  .footer:after
+    border-top: 12px solid $orange-color
+    border-left: 25px solid transparent
+    border-right: 25px solid $orange-color
+    border-bottom: 12px solid transparent
+    bottom: -24px
+
+  .conference
+    background-color: $green-color
+
+  .conference:after
+    border-top-color: #85D299
+    border-right-color: #85D299
+
+  .ticket
+    background-color: $pink-color
+
+  .ticket:after
+    border-top-color: #F195BB
+    border-right-color: #F195BB
+
+  .backstage
+    background-color: $blue-color
+
+  .backstage:after
+    border-top-color: #83C2E5
+    border-right-color: #83C2E5
+
+.eventlist
+  height: 860px
+  background: $grey-color
+  padding: 0px
+  padding-bottom: 20px
+
+  h2
+    padding-top: 5px
+    margin-left: 20px
+    font-weight: 700
+    font-size: 2.5em
+    color: #FFFFFF
+
+  a
+    color: white !important
+    font-size: 1.2em
+    font-weight: 500
+    text-transform: none
+
+  .sidenav
+    text-align: left
+    padding-left: 30px
+    width: 100%
+    margin-bottom: 5px
+    left: -40px
+
+  .sidenav:after
+    border-top: 7px solid #6D2D00
+    border-left: 10px solid transparent
+    border-right: 10px solid #6D2D00
+    border-bottom: 7px solid transparent
+    bottom: -14px
+
+// Content
+
+.blocklink
+  float: left
+  position: relative
+
+  .title
+    position: absolute
+    background-color: $orange-color
+    padding-left: 30px
+    padding-right: 30px
+    padding-top: 5px
+
+    h2
+      color: white
+      font-size: 1.8em
+      font-weight: 500
+      text-transform: uppercase
+
+  .conference
+    background-color: $green-color
+
+  .ticket
+    background-color: $pink-color
+
+  .backstage
+    background-color: $blue-color
+
+  .description
+    width: 100%
+    position: absolute
+    bottom: 0
+    padding: 20px
+    background-color: black
+    background-color: rgb(0, 0, 0)
+    background-color: rgba(0, 0, 0, 0.6)
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"
+
+    p
+      color: white
+      font-size: 1.3em
+      line-height: 1.2em
+      margin: 0
+
+.main-content
+  margin-top: 30px
+
+.editorial
+  border: 1px solid #DDD
+
+  h2
+    color: #FFFFFF
+    background-color: grey
+    text-align: center
+    font-size: 1.3em
+    margin: 0px
+
+  .morecontent
+    margin: 15px
+
+  a
+    color: black
+    font-weight: 500
+
+  ul
+    margin-left: 5px
+    margin-right: 5px
+
+    li
+      padding-top: 5px
+      padding-bottom: 5px
+      border-bottom: 1px dotted black
+
+      h3
+        font-size: 1.5em
+
+      p
+        line-height: 1.2em
+        margin-bottom: 5px 
+
+p.tagline
+  font-size: 1.2em
+  font-weight: 300
+  line-height: 1.3em
+
+// Footer
+
+footer
+  background-color: $darkgrey-color
+  margin-top: 30px
+
+  .logo
+    display: block
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+
+  .legalnotice
+    color: $footerfont-color
+    font-size: 1.2em
+    text-align: center
+    line-height: 1.4em
+    padding: 10px
+
+  .horizontallist li
+    display: inline
+    list-style-type: none
+    padding-right: 30px
+    padding-left: 30px
+    color: white
+    border-right: 1px solid white
+
+    a
+      color: white
+
+  .phone
+    color: $orange-color !important
+
+  li:last-child
+    border: none
+
+.footerlink
+  padding-top: 35px
+
+  a
+    color: $footerfont-color
+    font-weight: 500
+
+hr
+  border-color: $footerfont-color
