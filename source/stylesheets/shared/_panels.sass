@@ -1,3 +1,10 @@
+=transition($value)
+  -webkit-transition: ($value)
+  -moz-transition: ($value)
+  -o-transition: ($value)
+  -ms-transition: ($value)
+  transition: ($value)
+
 .panel
   background-color: white
   position: relative
@@ -47,3 +54,4 @@
 
 .panel:hover
   background-color: $lightgrey-color
+  +transition(background-color 250ms linear)
