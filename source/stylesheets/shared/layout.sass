@@ -1,12 +1,21 @@
 // General
 
-$orange-color: #FC5F00
-$green-color: #0EA42C
-$pink-color: #E42377
-$blue-color: #2284CB
-$grey-color: #565455
-$darkgrey-color: #232321
-$footerfont-color: #4A4A4A
+@import variables
+@import ribbons
+@import nav
+@import footer
+
+=box-shadow($value)
+  -webkit-box-shadow: $value
+  -moz-box-shadow:  $value
+  box-shadow: $value
+
+=rotate($value)
+  -webkit-transform: rotate($value)
+  -moz-transform: rotate($value)
+  -o-transform: rotate($value)
+  -ms-transform: rotate($value)
+  transform: rotate($value)
 
 .off-canvas-wrap,
 .inner-wrap
@@ -35,150 +44,7 @@ h1
   font-size: 3em
   font-weight: 700
 
-// Nav
-
-.nav-icon
-  width: 2.5rem
-  height: 2.5rem
-  border-left: solid 1px #4E4E4E
-  box-shadow: -1px 0 0 #1A1A1A
-
-.container
-  max-width: 1440px
-  margin-left: auto
-  margin-right: auto
-
-#header
-  background-color: #000000
-  width: 100%
-#header.fixed
-  position: fixed
-  top: 0
-
-.top-bar-section ul li > a
-  border-left: solid 1px #4E4E4E
-  box-shadow: -1px 0 0 #1A1A1A
-
-.nav-wrap
-  background: -webkit-linear-gradient($grey-color $darkgrey-color) /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient($grey-color, $darkgrey-color) /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient($grey-color, $darkgrey-color) /* For Firefox 3.6 to 15 */
-  background: linear-gradient($grey-color, $darkgrey-color) /* Standard syntax (must be last) */
-
-  .top-bar
-
-    .top-bar-section ul li > a
-      font-size: 1em
-      font-weight: 700
-      color: grey
-      padding-left: 20px
-      padding-right: 20px
-      text-transform: uppercase
-      border-right: 1px solid $darkgrey-color
-
-    .eventbutton
-      box-shadow: inset 0 5px 0px $orange-color
-
-    .ticketbutton
-      box-shadow: inset 0 5px 0px $pink-color
-
-    .conferencebutton
-      box-shadow: inset 0 5px 0px $green-color
-
-    .backstagebutton
-      box-shadow: inset 0 5px 0px $blue-color
-
-.upper-nav
-  padding: 15px 0 15px 0
-  .logo
-    display: block
-    margin-left: auto
-    margin-right: auto
-    @media #{$large-up}
-      float: left
-
-#desktop-search
-  margin-top: 35px
-  .button,
-  input
-    margin-bottom: 0
-    height: 30px
-
-  .button
-    background-color: #fc5f00
-    border-top-right-radius: 3px
-    border-bottom-right-radius: 3px
-
-  input
-    border-top-left-radius: 3px
-    border-bottom-left-radius: 3px
-
-// Ribbon
-
-.ribbon
-  position: relative
-  width: 200px
-  height: 20px
-  background-color: #EB5D18
-  text-align: center
-  color: #FFFFFF
-  margin: 20px 20px 30px 20px
-  padding: 6px 10px 22px 10px
-  text-transform: uppercase
-  font-size: 0.8em
-
-.ribbon:after
-  height: 0px
-  width: 0px
-  border-top: 12px solid #6D2D00
-  border-left: 12px solid transparent
-  border-right: 12px solid #6D2D00
-  border-bottom: 12px solid transparent
-  content: " "
-  position: absolute
-  bottom: -24px
-  left: 0
-
-.footerribbon
-  padding-top: 20px
-
-  .footer
-    width: 80%
-    max-width: 230px
-    height: 30px
-    font-size: 1em
-    color: #FFFFFF
-    font-weight: 500
-    padding-top: 2px
-    margin-bottom: 40px
-
-  .footer:after
-    border-top: 12px solid #6D2D00
-    border-left: 12px solid transparent
-    border-right: 12px solid #6D2D00
-    border-bottom: 12px solid transparent
-    bottom: -24px
-
-.conference
-  background-color: $green-color
-
-.conference:after
-  border-top-color: #2D5014 !important
-  border-right-color: #2D5014 !important
-
-.ticket
-  background-color: $pink-color
-
-.ticket:after
-  border-top-color: #6C0E35 !important
-  border-right-color: #6C0E35 !important
-
-.backstage
-  background-color: $blue-color
-
-.backstage:after
-  border-top-color: #084554 !important
-  border-right-color: #084554 !important
+// Content
 
 .eventlist
   margin-right: 40px
@@ -213,8 +79,6 @@ h1
     border-right: 10px solid #6D2D00
     border-bottom: 7px solid transparent
     bottom: -14px
-
-// Content
 
 .blocklink
   float: left
@@ -303,72 +167,36 @@ p.tagline
   font-weight: 300
   line-height: 1.3em
 
-.rightmenu
-  padding-left: 35px !important
-  padding-top: 20px !important
-
-  li
-    padding: 0 !important
-    margin: 10px
-
-  a
-    border: none !important
-    color: $footerfont-color !important
-    padding: 0 !important
-    margin: 10px !important
-
-  .newsletter
-    margin-top: 30px !important
-
-  .socialmedia
-    margin-top: 30px !important
-    width: 64px
-
-// Footer
-
-footer
-  background-color: $darkgrey-color
+.topmargin
   margin-top: 30px
 
-  .logo
-    display: block
-    margin-left: auto
-    margin-right: auto
-    padding: 40px 20px 0px 20px
+.stack
+  margin: 10px
+  position: relative
+  background-color: #DDD
+  +box-shadow(2px 2px 10px black)
+  +rotate(-0deg)
 
-  .legalnotice
-    color: $footerfont-color
-    font-size: 1em
-    line-height: 1.4em
-    padding: 20px
+.stack:before
+  background-color: white
+  height: 100%
+  width: 100%
+  content: ""
+  +box-shadow(2px 2px 10px black)
+  position: absolute
+  z-index: -1
+  bottom: 5px
+  right: 10px
+  +rotate(-1deg)
 
-  .horizontallist li
-    display: inline
-    list-style-type: none
-    padding-right: 10px
-    padding-left: 10px
-    color: white
-    border-right: 1px solid white
-
-    a
-      color: white
-
-  .contact
-    color: $orange-color !important
-
-  li:last-child
-    border: none
-
-.footerlink
-  padding-top: 35px
-
-  a
-    color: $footerfont-color
-    font-weight: 500
-
-.socialmedia
-  margin-top: 35px
-  width: 64px
-
-hr
-  border-color: $footerfont-color
+.stack:after
+  background-color: white
+  height: 100%
+  width: 100%
+  content: ""
+  +box-shadow(2px 2px 10px black)
+  position: absolute
+  z-index: -1
+  bottom: 0
+  right: 3px
+  +rotate(5deg)
