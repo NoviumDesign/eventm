@@ -28,10 +28,49 @@ title: Träfflistan
     </div>
 
     <div class="small-12 medium-12 large-9 columns">
+      <dl class="accordion" data-accordion>
+      <dd class="nopadding">
+        <a href="#filteringpanel">
+          <div class="small-12 columns filterpanel borderbottom">
+            <div class="filterpanel small-8 medium-8 large-4 columns">
+              <h2>Aktiviteter</h2>
+            </div>
+            <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+              <p class="show-for-large-up">Här hittar du aktiviteter till alla tillfällen.<br>Du filtrerar listan genom att välja en eller flera kategorier.</p>
+              <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+            </div>
+          </div>
+        </a>
+        <div id="filteringpanel" class="content">
+          <div class="small-12 columns filterpanel">
+            <div class="filterpanel small-12 medium-12 large-4 columns">
+              <ul class="filtering">
+                <li><input type="radio" name="filtering" value="All" id="filreingAll"><label for="filteringAll">Alla</label></li>
+                <li><input type="radio" name="filtering" value="Company" id="filreingCompany"><label for="filteringCompany">Företagsevent</label></li>
+                <li><input type="radio" name="filtering" value="Private" id="filreingPrivate"><label for="filteringPrivate">Privat</label></li>
+              </ul>
+            </div>
+            <hr class="hide-for-large-up filteringline">
+            <div class="filterpanel small-12 medium-12 large-8 columns">
+              <ul class="filtering">
+                <li><input id="filtrering1" type="checkbox"><label for="filtrering1">Artistförmedling</label></li>
+                <li><input id="filtrering2" type="checkbox"><label for="filtrering2">Barn &amp; Familj</label></li>
+                <li><input id="filtrering3" type="checkbox"><label for="filtrering3">Cirkus &amp; Variete</label></li>
+                <li><input id="filtrering4" type="checkbox"><label for="filtrering4">Imitation &amp; Lookalike</label></li>
+                <li><input id="filtrering5" type="checkbox"><label for="filtrering5">Middags- och Mingelunderhållning</label></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </dd>
+      <dl>
+    </div>
+
+    <div class="small-12 medium-12 large-9 columns">
       <h1 class="results">Resultat: X träffar</h1>
 
       <div class="panel small-12 medium-6 large-12 columns">
-        <a href="#">
+        <a href="#" data-reveal-id="profileside">
           <div class="thumbnail large-2 columns show-for-large-up">
             <img src="http://placehold.it/150x150" alt="">
           </div>
