@@ -4,13 +4,20 @@ title: Erbjudanden
 
 <section class="hero">
   <div class="row">
-    <div class="small-12 columns">
-      <h1>Boka<br>konferens</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-4 medium-7 columns">
-      <p>Här hittar du intressanta ebjudanden från medlemmarna på eventmarket.</p>
+    <div class="container">
+      <ul class="hero-orbit" data-orbit data-options="bullets:false; timer: false; slide_number: false;">
+        <li>
+          <img src="http://placehold.it/1500x300" alt="slide 1" />
+          <h1>boka<br>biljetter</h1>
+        </li>
+        <li>
+          <img src="http://placehold.it/1500x300" alt="slide 2" />
+          <h1>hej<br>san</h1>
+        </li>
+        <li>
+          <img src="http://placehold.it/1500x300" alt="slide 3" />
+        </li>
+      </ul>
     </div>
   </div>
 </section>
@@ -110,16 +117,16 @@ title: Erbjudanden
         <h2>Konferens</h2>
         <ul class="tutorial">
           <li>
-              <dl class="accordion" data-accordion>
-                <dd class="conferencetutorial">
-                  <a href="#tutorial"><div class="rightribbon sidenav ribbon">Så här går det till</div></a>
-                  <div id="tutorial" class="content">
-                    <p>Från start visas alla konferens-anläggningar som finns med på eventmarket. Du filtrerar listan genom att välja enm eller flera kategorier som passar er.
-                    <br>
-                    <strong>Du kan även söka fram</strong> anläggningarna geografiskt och/eller ange antal. Kontakt sker direkt med anläggningen Lycka till!</p>
-                  </div>
-                </dd>
-
+            <dl class="accordion" data-accordion>
+              <dd class="conferencetutorial">
+                <a href="#tutorial"><div class="rightribbon sidenav ribbon">Så här går det till</div></a>
+                <div id="tutorial" class="content">
+                  <p>Från start visas alla konferens-anläggningar som finns med på eventmarket. Du filtrerar listan genom att välja enm eller flera kategorier som passar er.
+                  <br>
+                  <strong>Du kan även söka fram</strong> anläggningarna geografiskt och/eller ange antal. Kontakt sker direkt med anläggningen Lycka till!</p>
+                </div>
+              </dd>
+            </dl>
           </li>
           <li>
             <div class="rightribbon ribbon sidenav">Kategori</div>
@@ -141,10 +148,25 @@ title: Erbjudanden
               </label>
             </form>
           </li>
-          <li><div class="rightribbon ribbon sidenav">Antal</div>
-            <label></label>
+          <li>
+            <div class="rightribbon ribbon sidenav">Antal</div>
+            <form class="conferenceform">
+              <label>Antal
+                <input type="text" id="position">
+              </label>
+            </form>
           </li>
-          <li><div class="rightribbon ribbon sidenav">Eller...</a></li>
+          <li>
+            <div class="rightribbon ribbon sidenav">Eller...</a></div>
+            <div class="row">
+              <div class="large-12 columns">
+                <p class="externalconference">Vill du istället kontakta en extern konferensarrangör? En ectern arrangör är ej knuten till en specifik anläåggning. I samråd med kunden ansvarar arrangören för helheten som programupplägg, logistik, bokning av lokal, föreläsare, genomförande &amp; uppföljning..</p>
+                <form class="conferenceform">
+                  <input id="hide" type="checkbox"><label for="hide">Dölj anläggningar och visa endast externa konferens-arrangörer.</label>
+                </form>
+              </div>
+            </div>
+          </li>
         </ul>
       </section>
     </div>

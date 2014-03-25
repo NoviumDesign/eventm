@@ -1,6 +1,71 @@
 .profileside
   background-color: $darkgrey-color
 
+  dl
+
+  dd, dt
+    color: white
+
+  dt
+    margin-top: 15px
+    position: relative
+    padding-left: 15px
+
+  dd
+    padding-left: 30px
+    margin-bottom: 0
+
+  dl.tabs
+  
+    a
+      padding: 15px 0px 15px 0px
+
+  .tabs-content > .active
+    padding: 30px
+    background-color: white !important
+
+    h2, p
+      color: black
+
+    a
+      color: $blue-color
+
+    img
+      margin-bottom: 15px
+
+  dl.accordion
+    margin-top: 30px
+    
+    a
+      padding: 15px 0px 15px 10px
+
+  dl.accordion, dl.tabs
+
+    dd
+      padding-left: 0px
+
+    a
+      color: white
+      font-size: 1em
+      text-transform: uppercase
+      height: 60px
+      background: -webkit-linear-gradient($grey-color, $darkgrey-color) !important /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient($grey-color, $darkgrey-color) !important /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient($grey-color, $darkgrey-color) !important /* For Firefox 3.6 to 15 */
+      background: linear-gradient($grey-color, $darkgrey-color) !important /* Standard syntax (must be last) */
+
+    .content
+
+      h2, p
+        color: black
+
+      a
+        background: white !important
+        color: $blue-color
+        height: 0
+        text-transform: none
+        padding: 0
+
   img.profilephoto
     margin-bottom: 15px
 
@@ -31,57 +96,6 @@
     .paddingbottom
       padding-bottom: 20px
 
-dl.tabs
-  
-  a
-    padding: 15px 0px 15px 0px
-
-.tabs-content > .active
-  padding: 30px
-  background-color: white !important
-
-  h2, p
-    color: black
-
-  a
-    color: $blue-color
-
-  img
-    margin-bottom: 15px
-
-dl.accordion
-  margin-top: 30px
-  
-  a
-    padding: 15px 0px 15px 10px
-
-dl.accordion, dl.tabs
-
-  dd
-    padding-left: 0px
-
-  a
-    color: white
-    font-size: 1em
-    text-transform: uppercase
-    height: 60px
-    background: -webkit-linear-gradient($grey-color, $darkgrey-color) !important /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient($grey-color, $darkgrey-color) !important /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient($grey-color, $darkgrey-color) !important /* For Firefox 3.6 to 15 */
-    background: linear-gradient($grey-color, $darkgrey-color) !important /* Standard syntax (must be last) */
-
-  .content
-
-    h2, p
-      color: black
-
-    a
-      background: white !important
-      color: $blue-color
-      height: 0
-      text-transform: none
-      padding: 0
-
 .profileinformation
   padding: 0
 
@@ -90,19 +104,6 @@ dl.accordion, dl.tabs
 
   h2
     color: white
-dl
-
-  dd, dt
-    color: white
-
-  dt
-    margin-top: 15px
-    position: relative
-    padding-left: 15px
-
-  dd
-    padding-left: 30px
-    margin-bottom: 0
 
 .listarrow
   position: absolute
