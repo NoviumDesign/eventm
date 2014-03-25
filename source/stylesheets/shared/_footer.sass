@@ -16,7 +16,6 @@ footer
 
   .horizontallist li
     display: inline
-    list-style-type: none
     padding-right: 10px
     padding-left: 10px
     color: white
@@ -46,10 +45,15 @@ hr
   border-color: $footerfont-color
 
 .footerribbon
+  padding: 0
   position: relative
   padding-top: 20px
   left: 50%
   margin-left: -120px
+
+  li
+    height: 30px
+    margin-bottom: 35px
 
   .footer
     width: 200px
@@ -58,7 +62,6 @@ hr
     color: #FFFFFF
     font-weight: 500
     padding-top: 2px
-    margin-bottom: 40px
 
   .footer:after
     border-top: 12px solid #6D2D00
@@ -66,3 +69,13 @@ hr
     border-right: 12px solid #6D2D00
     border-bottom: 12px solid transparent
     bottom: -24px
+
+.mobilelist
+  margin-top: 30px
+  list-style-type: none
+
+  li
+    color: white
+
+    a
+      color: white

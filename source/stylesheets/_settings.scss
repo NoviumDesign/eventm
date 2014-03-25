@@ -868,7 +868,7 @@ $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // We use these to control the style of the modal itself.
 $reveal-modal-bg: #232321;
 // $reveal-position-top: 50px;
-// $reveal-default-width: 80%;
+$reveal-default-width: 85%;
 // $reveal-modal-padding: rem-calc(20);
 // $reveal-box-shadow: 0 0 10px rgba(#000,.4);
 
@@ -1083,7 +1083,7 @@ $thumb-border-style: none;
 $thumb-border-width: none;
 // $thumb-border-color: #fff;
 $thumb-box-shadow: none;
-// $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
+$thumb-box-shadow-hover: 0 0 6px 1px rgba(#888,0.5);
 
 // Radius and transition speed for thumbs
 // $thumb-radius: $global-radius;
