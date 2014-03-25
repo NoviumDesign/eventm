@@ -2,11 +2,11 @@
 
 @import variables
 @import ribbons
-@import nav
 @import footer
 @import panels
 @import profileside
 @import conference
+@import filteringpanels
 
 =box-shadow($value)
   -webkit-box-shadow: $value
@@ -262,43 +262,3 @@ a.hits:hover
 
   p
     text-decoration: underline
-
-.borderbottom
-  border-bottom: 1px solid white
-
-.filterpanel
-  background-color: $orange-color
-  padding: 5px
-
-  h2
-    font-size: 1.8em
-    margin: 5px 0px 0px 5px
-    color: white
-
-  p
-    color: white
-    margin: 0px 5px 0px 0px
-
-.nopadding
-
-  a
-    padding: 0 !important
-    background-color: $orange-color !important
-
-  .content
-    padding: 0
-
-ul.filtering
-  list-style-type: none
-  margin: 10px
-
-  label
-    color: white
-    vertical-align: middle
-
-hr.whiteline
-  padding: 0
-  border-color: white
-
-.panelmargin
-  margin-bottom: 15px
