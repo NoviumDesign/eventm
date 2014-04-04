@@ -23,61 +23,68 @@ title: Konferens
   </div>
 </section>
 
+<!-- Mobile filtering -->
+
+<div class="row hide-for-large-up">
+  <div class="small-12 columns profileinformation">
+    <dl class="accordion" data-accordion>
+      <dd class="active">
+        <a href="#presentation" class="settingsbutton">Så här går det till...</a>
+        <div id="presentation" class="searchsettings content">
+          <p>Från start visas alla konferens-anläggningar som finns med på eventmarket. Du filtrerar listan genom att välja enm eller flera kategorier som passar er.</p>
+          <p><strong>Du kan även söka fram</strong> anläggningarna geografiskt och/eller ange antal. Kontakt sker direkt med anläggningen Lycka till!</p>
+        </div>
+      </dd>
+      <dd>
+        <a href="#extraheader" class="settingsbutton">Välj en eller flera kategorier</a>
+        <div id="extraheader" class="searchsettings content">
+          <form>
+            <input id="dayconference" type="checkbox"><label for="dayconference">Dagkonferens</label><br>
+            <input id="sleepoverconference" type="checkbox"><label for="sleepoverconference">Konferens m. övernattning</label><br>
+            <input id="mansionconference" type="checkbox"><label for="mansionconference">Slott &amp;- Gårdsskonferens</label><br>
+            <input id="congress" type="checkbox"><label for="congress">Kongress</label><br>
+            <input id="lecture" type="checkbox"><label for="lecture">Hörsal/Föreläsning</label><br>
+            <input id="event" type="checkbox"><label for="event">Kvällsfest/Event</label>
+          </form>
+        </div>
+      </dd>
+      <dd>
+        <a href="#offer" class="settingsbutton">Fyll i önskad ort</a>
+        <div id="offer" class="searchsettings content">
+          <form>
+            <label>Fyll i önskad ort
+              <input type="text" id="position">
+            </label>
+          </form>
+        </div>
+      </dd>
+      <dd>
+        <a href="#map" class="settingsbutton">Välj antal</a>
+        <div id="map" class="searchsettings content">
+          <form>
+            <label>Fyll i antal
+              <input type="text" id="position">
+            </label>
+          </form>
+        </div>
+      </dd>
+      <dd>
+        <a href="#media" class="settingsbutton">Eller...</a>
+        <div id="media" class="searchsettings content">
+          <p>Vill du istället kontakta en extern konferensarrangör? En extern arrangör är ej knuten till en specifik anläåggning. I samråd med kunden ansvarar arrangören för helheten som programupplägg, logistik, bokning av lokal, föreläsare, genomförande &amp; uppföljning.</p>
+          <form>
+          <input id="showexternal" type="checkbox"><label for="showexternal">Dölj anläggningar och visa endast externa konferens-arrangörer.</label>
+          </form>
+        </div>
+      </dd>
+    </dl>
+  </div>
+</div>
+
 <!-- Main content -->
 <section class="main-content container">
 
   <div class="row">
-
-    <div class="panelmargin small-12 medium-12 columns hide-for-large-up">
-      <dl class="accordion" data-accordion>
-      <dd class="nopadding">
-        <a href="#filteringpanel">
-          <div class="filterpanel conferencebackground small-12 columns borderbottom">
-            <div class="filterpanel conferencebackground small-8 medium-8 large-4 columns">
-              <h2>Konferens</h2>
-            </div>
-            <div class="filterpanel conferencebackground small-4 medium-4 large-8 columns text-right">
-              <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
-            </div>
-          </div>
-        </a>
-        <div id="filteringpanel" class="content">
-          <div class="small-12 columns filterpanel conferencebackground">
-            <div class="filterpanel conferencebackground small-12 medium-12 large-8 columns">
-              <form>
-                <h5>Välj en eller flera kategorier</h5>
-                <ul class="filtering">
-                  <li><input id="dagkonferens" type="checkbox"><label for="dagkonferens">Dagkonferens</label></li>
-                  <li><input id="konferens m. övernattning" type="checkbox"><label for="konferens m. övernattning">Konferens m. övernattning</label></li>
-                  <li><input id="slott &amp;- gårdsskonferens" type="checkbox"><label for="slott &amp;- gårdsskonferens">Slott &amp;- Gårdsskonferens</label></li>
-                  <li><input id="kongress" type="checkbox"><label for="kongress">Kongress</label></li>
-                  <li><input id="hörsal/föreläsning" type="checkbox"><label for="hörsal/föreläsning">Hörsal/Föreläsning</label></li>
-                  <li><input id="kvällsfest/event" type="checkbox"><label for="kvällsfest/event">Kvällsfest/Event</label></li>
-                </ul>
-              </form>
-            </div>
-            <hr class="whiteline">
-            <div class="filterpanel conferencebackground small-12 medium-12 large-8 columns">
-              <form class="mobileinput">
-                <label>Fyll i önskad ort
-                  <input type="text" id="position">
-                </label>
-                <label>Fyll i antal
-                  <input type="text" id="position">
-                </label>
-              </form>
-            </div>
-            <hr class="whiteline">
-            <div class="filterpanel conferencebackground small-12 medium-12 columns">
-              <form class="mobileinput">
-                <input id="hide" type="checkbox"><label for="hide">Dölj anläggningar och<br>visa endast externa konferens-arrangörer.</label>
-              </form>
-            </div>
-          </div>
-        </div>
-      </dd>
-      <dl>
-    </div>
 
     <div class="small-12 medium-12 large-9 columns">
       <h1 class="results">Resultat: X träffar</h1>
