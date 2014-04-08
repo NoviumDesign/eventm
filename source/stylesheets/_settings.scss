@@ -1028,8 +1028,8 @@ $reveal-border-width: none;
 // $include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-// $table-bg: #fff;
-// $table-even-row-bg: #f9f9f9  ;
+$table-bg: white;
+$table-even-row-bg: white  ;
 
 // These control the table cell border style
 // $table-border-style: solid;
@@ -1037,7 +1037,7 @@ $reveal-border-width: none;
 // $table-border-color: #ddd;
 
 // These control the table head styles
-// $table-head-bg: #f5f5f5  ;
+$table-head-bg: white  ;
 // $table-head-font-size: rem-calc(14);
 // $table-head-font-color: #222;
 // $table-head-font-weight: bold;

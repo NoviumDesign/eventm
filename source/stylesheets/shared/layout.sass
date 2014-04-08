@@ -9,6 +9,7 @@
 @import conference
 @import filteringpanels
 @import photoarchive
+@import tickets
 
 .off-canvas-wrap,
 .inner-wrap
@@ -53,6 +54,9 @@
 h1
   font-size: 3em
   font-weight: 700
+
+.uc
+  text-transform: uppercase
 
 // Content
 
@@ -145,15 +149,15 @@ a.hits:hover
     font-weight: 500
 
   .sidenav:after
-    border-top: 7px solid $orangelight-color
+    border-top: 10px solid $orangelight-color
     border-left: 10px solid transparent
     border-right: 10px solid $orangelight-color
-    border-bottom: 7px solid transparent
-    bottom: -14px
+    border-bottom: 10px solid transparent
+    bottom: -20px
 
 dl.accordion, dl.tabs
 
-  a.settingsbutton
+  a.gradientbutton
     color: white
     font-size: 1em
     text-transform: uppercase
@@ -168,3 +172,12 @@ dl.accordion, dl.tabs
 div.searchsettings
   padding-left: 25px !important
   padding-right: 25px !important
+
+.arrow
+  position: absolute
+  margin-top: -10px
+  width: 0
+  height: 0
+  border-top: 10px solid transparent
+  border-bottom: 10px solid transparent
+  border-left: 10px solid $pink-color

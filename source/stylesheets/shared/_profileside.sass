@@ -6,9 +6,6 @@
 .reveal-modal
   max-width: 1440px
 
-.profileside
-  background-color: $darkgrey-color
-
   dl
 
   dd, dt
@@ -49,8 +46,13 @@
     dd
       padding-left: 0px
 
+    dd.active
+
+      a
+        color: white
+
     a
-      color: white
+      color: $grey-color
       font-size: 1em
       text-transform: uppercase
       height: 60px
@@ -73,6 +75,9 @@
         height: 0
         text-transform: none
         padding: 0
+
+.profileside
+  background-color: $darkgrey-color
 
   img.profilephoto
     margin-bottom: 15px
