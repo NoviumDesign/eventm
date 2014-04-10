@@ -11,6 +11,7 @@
 @import photoarchive
 @import tickets
 @import backstage
+@import editor
 
 .off-canvas-wrap,
 .inner-wrap
@@ -28,6 +29,10 @@
       font-size: 2.8em !important
       top: 15px !important
       left: 30px !important
+
+@media (max-width:640px)
+  .photo
+    margin: 15px 0px 15px 0px !important
 
 .hero
   background: $orange-color
@@ -190,8 +195,8 @@ div.searchsettings
   border-bottom: 10px solid transparent
   border-left: 10px solid $pink-color
 
-img.photo
-  padding: 15px
+.photo
+  margin: 15px
 
 .contentrow
   padding: 10px 0px 10px 0px
