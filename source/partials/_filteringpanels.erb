@@ -38,7 +38,7 @@
               <span class="hide-for-large-up">
               <li><input id="broadcaster" type="checkbox"><label for="broadcaster">Konferencier / <br class="show-for-large-up">Programledare</label></li>
               <li><input id="magic" type="checkbox"><label for="magic">Magi &amp; Trolleri</label></li>
-              <li><input id="dinnermingelmonter" type="checkbox"><label for="dinnermingelmonter">Middag, Mingel &amp; Monter</label></li>
+              <li><input id="dinnermingleshowcase" type="checkbox"><label for="dinnermingleshowcase">Middag, Mingel &amp; Monter</label></li>
               <li><input id="musicalsceneshow" type="checkbox"><label for="musicalsceneshow">Musikalisk Scenshow</label></li>
               <li><input id="musicbandorchestra" type="checkbox"><label for="musicbandorchestra">Musik, Band &amp; Orkestrar</label></li>
               <li><input id="pianobar" type="checkbox"><label for="pianobar">Pianobar &amp; Instrumentalister</label></li>
@@ -53,7 +53,7 @@
             <ul class="filtering">
               <li><input id="broadcaster" type="checkbox"><label for="broadcaster">Konferencier / <br class="show-for-large-up">Programledare</label></li>
               <li><input id="magic" type="checkbox"><label for="magic">Magi &amp; Trolleri</label></li>
-              <li><input id="dinnermingelmonter" type="checkbox"><label for="dinnermingelmonter">Middag, Mingel <br class="show-for-large">&amp; Monter</label></li>
+              <li><input id="dinnermingleshowcase" type="checkbox"><label for="dinnermingleshowcase">Middag, Mingel <br class="show-for-large">&amp; Monter</label></li>
               <li><input id="musicalsceneshow" type="checkbox"><label for="musicalsceneshow">Musikalisk <br class="show-for-large">Scenshow</label></li>
               <li><input id="musicbandorchestra" type="checkbox"><label for="musicbandorchestra">Musik, Band <br class="show-for-large">&amp; Orkestrar</label></li>
             </ul>
@@ -247,56 +247,436 @@
   <div class="panelmargin small-12 medium-12 large-12 columns">
     <dl class="accordion" data-accordion>
     <dd class="nopadding">
-      <a href="#speeches">
+      <a href="#catering">
         <div class="small-12 columns filterpanel borderbottom">
           <div class="filterpanel small-8 medium-8 large-4 columns">
-            <h2>Föreläsare &amp; Talare</h2>
+            <h2>Catering</h2>
           </div>
           <div class="filterpanel small-4 medium-4 large-8 columns text-right">
-            <p class="show-for-large-up">Här hittar du talare och förelasare samt tips på föreläsningar inom alla områden. Du filtrerar listan genom att välja en eller flera kategorier.</p>
+            <p class="show-for-large-up">Massa förklarande text.</p>
             <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
           </div>
         </div>
       </a>
-      <div id="speeches" class="content">
+      <div id="catering" class="content">
         <div class="small-12 columns filterpanel">
-          <div class="filterpanel small-12 medium-12 large-3 columns">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
             <ul class="filtering">
-              <li><input type="radio" name="filtering" value="Lecturer" id="filteringLecturer"><label for="filteringLecturer">Föreläsare</label></li>
-              <li><input type="radio" name="filtering" value="LecturingTips" id="filteringLecturingTips"><label for="filteringLecturingTips">Föreläsnings-Tips</label></li>
-              <li><input type="radio" name="filtering" value="SpeechMediation" id="filteringSpeechMediation"><label for="filteringSpeechMediation">Talarförmedling</label></li>
-              <li><input type="radio" name="filtering" value="Moderator" id="filteringModerator"><label for="filteringModerator">Moderator</label></li>
-            </ul>
-          </div>
-          <hr class="hide-for-large-up whiteline">
-          <div class="filterpanel small-12 medium-12 large-3 columns">
-            <ul class="filtering borderleft">
-              <li><input id="businessdevelopment" type="checkbox"><label for="businessdevelopment">Affärsutveckling <br class="show-for-large">&amp; Service</label></li>
-              <li><input id="health" type="checkbox"><label for="health">Friskvård &amp; Hälsa</label></li>
-              <li><input id="communication" type="checkbox"><label for="communication">Kommunikation <br class="show-for-large">&amp; Retorik</label></li>
-              <li><input id="personaldevelopment" type="checkbox"><label for="personaldevelopment">Personlig <br class="show-for-large">Utveckling</label></li>
+              <li><input id="partycatering" type="checkbox"><label for="partycatering">Festcatering</label></li>
+              <li><input id="conferencecatering" type="checkbox"><label for="conferencecatering">Konferenscatering</label></li>
+              <li><input id="holidaycatering" type="checkbox"><label for="holidaycatering">Jul &amp; <br class="show-for-large-up">Nyårscatering</label></li>
 
               <span class="hide-for-large-up">
-              <li><input id="inenglish" type="checkbox"><label for="inenglish">På Engelska</label></li>
-              <li><input id="stressconflicts" type="checkbox"><label for="stressconflicts">Stress &amp; Konflikthantering</label></li>
-              <li><input id="education" type="checkbox"><label for="education">Utbildning</label></li>
-              <li><input id="adventuretravels" type="checkbox"><label for="adventuretravels">Äventyr & Resor</label></li>
-              <li><input id="other" type="checkbox"><label for="other">Övrigt</label></li>
+              <li><input id="goodies" type="checkbox"><label for="goodies">Godsaker (postleverans)</label></li>
+              <li><input id="icecubes" type="checkbox"><label for="icecubes">Iskuber</label></li>
+              <li><input id="for-setting" type="checkbox"><label for="for-setting">Till dukningen</label></li>
+              <form>
+                <li>
+                  <label>Välj önskad ort
+                    <select>
+                      <option>Hela Sverige</option>
+                      <option>Stockholm</option>
+                      <option>Göteborg</option>
+                    </select>
+                  </label>
+                </li>
+              </form>
               </span>
             </ul>
           </div>
-          <div class="large-3 columns show-for-large-up">
+          <div class="large-4 columns show-for-large-up">
             <ul class="filtering">
-              <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">På Engelska</label></li>
-              <li><input id="partyband" type="checkbox"><label for="partyband">Stress &amp; <br class="show-for-large">Konflikthantering</label></li>
-              <li><input id="pianobar" type="checkbox"><label for="pianobar">Utbildning</label></li>
-              <li><input id="musicbandorchestra" type="checkbox"><label for="musicbandorchestra">Äventyr & <br class="show-for-large">Resor</label></li>
+              <li><input id="goodies" type="checkbox"><label for="goodies">Godsaker (postleverans)</label></li>
+              <li><input id="icecubes" type="checkbox"><label for="icecubes">Iskuber</label></li>
+              <li><input id="for-setting" type="checkbox"><label for="for-setting">Till dukningen</label></li>
             </ul>
           </div>
-          <div class="large-3 columns show-for-large-up">
+          <div class="large-4 columns show-for-large-up">
+            <form>
+              <ul class="filtering">
+                <li>
+                  <label>Välj önskad ort
+                    <select>
+                      <option>Hela Sverige</option>
+                      <option>Stockholm</option>
+                      <option>Göteborg</option>
+                    </select>
+                  </label>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </dd>
+    </dl>
+  </div>
+
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#event">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Event &amp; Mötesanläggningar</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Massa förklarande text.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
+        </div>
+      </a>
+      <div id="event" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
             <ul class="filtering">
-              <li><input id="spectacularsceneshow" type="checkbox"><label for="spectacularsceneshow">Övrigt</label></li>
+              <li><input id="activityestablishment" type="checkbox"><label for="activityestablishment">Aktivitetseanläggningar</label></li>
+              <li><input id="conferenceestablishment" type="checkbox"><label for="conferenceestablishment">Konferensanläggningar</label></li>
+              <li><input id="congressestablishment" type="checkbox"><label for="congressestablishment">Kongressanläggningar</label></li>
+              <li><input id="eventlocal" type="checkbox"><label for="eventlocal">Eventlokaler</label></li>
+              <li><input id="partylocal-withrestaurant" type="checkbox"><label for="partylocal-withrestaurant">Festvåning m. Restaurang</label></li>
+              <li><input id="partylocal-bringfood" type="checkbox"><label for="partylocal-bringfood">Festlokal, medhavd förtäring</label></li>
+
+              <span class="hide-for-large-up">
+              <li><input id="hotel-quarters" type="checkbox"><label for="hotel-quarters">Hotell &amp; Logi</label></li>
+              <li><input id="auditorium" type="checkbox"><label for="auditorium">Hörsal</label></li>
+              <li><input id="concertelocal" type="checkbox"><label for="concertelocal">Konsertplatser</label></li>
+              <li><input id="expolocal-exhibition" type="checkbox"><label for="expolocal-exhibition">Mässlokaler / Utställning</label></li>
+              <li><input id="entertainment-culture" type="checkbox"><label for="entertainment-culture">Nöje &amp; Kultur</label></li>
+              <form>
+                <li>
+                  <label>Välj önskad ort
+                    <select>
+                      <option>Hela Sverige</option>
+                      <option>Stockholm</option>
+                      <option>Göteborg</option>
+                    </select>
+                  </label>
+                </li>
+                <li>
+                  <label>Fyll i antal
+                    <input type="text" id="amount">
+                  </label>
+                </li>
+              </form>
+              </span>
             </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="hotel-quarters" type="checkbox"><label for="hotel-quarters">Hotell &amp; Logi</label></li>
+              <li><input id="auditorium" type="checkbox"><label for="auditorium">Hörsal</label></li>
+              <li><input id="concertelocal" type="checkbox"><label for="concertelocal">Konsertplatser</label></li>
+              <li><input id="expolocal-exhibition" type="checkbox"><label for="expolocal-exhibition">Mässlokaler / Utställning</label></li>
+              <li><input id="entertainment-culture" type="checkbox"><label for="entertainment-culture">Nöje &amp; Kultur</label></li>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <form>
+              <ul class="filtering">
+                <li>
+                  <label>Välj önskad ort
+                    <select>
+                      <option>Hela Sverige</option>
+                      <option>Stockholm</option>
+                      <option>Göteborg</option>
+                    </select>
+                  </label>
+                </li>
+                <li>
+                  <label>Fyll i antal
+                    <input type="text" id="amount">
+                  </label>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </dd>
+    </dl>
+  </div>
+
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#personnel">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Personal &amp; Tjänster</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Massa förklarande text.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
+        </div>
+      </a>
+      <div id="personnel" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
+            <ul class="filtering">
+              <li><input id="eventpersonnel" type="checkbox"><label for="eventpersonnel">Eventpersonal</label></li>
+              <li><input id="photographer" type="checkbox"><label for="photographer">Fotograf</label></li>
+
+              <span class="hide-for-large-up">
+              <li><input id="chef-waiters" type="checkbox"><label for="chef-waiters">Kock &amp; Serveringspersonal</label></li>
+              <li><input id="account-law" type="checkbox"><label for="account-law">Redovisning &amp; Juridik</label></li>
+              <li><input id="guard-safety" type="checkbox"><label for="guard-safety">Vakt &amp; Säkerhet</label></li>
+              <li><input id="hosts" type="checkbox"><label for="hosts">Värdar &amp; Värdinnor</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="chef-waiters" type="checkbox"><label for="chef-waiters">Kock &amp; Serveringspersonal</label></li>
+              <li><input id="account-law" type="checkbox"><label for="account-law">Redovisning &amp; Juridik</label></li>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="guard-safety" type="checkbox"><label for="guard-safety">Vakt &amp; Säkerhet</label></li>
+              <li><input id="hosts" type="checkbox"><label for="hosts">Värdar &amp; Värdinnor</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </dd>
+    </dl>
+  </div>
+
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#advertising">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Reklam &amp; Expo</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Massa förklarande text.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
+        </div>
+      </a>
+      <div id="advertising" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
+            <ul class="filtering">
+              <li><input id="decals-signs" type="checkbox"><label for="decals-signs">Dekaler, Skyltar &amp; Rollup</label></li>
+              <li><input id="showcase-eventmaterial" type="checkbox"><label for="howcase-eventmaterial">Monter &amp; Mässmaterial</label></li>
+              <li><input id="showcaseproduction" type="checkbox"><label for="showcaseproduction">Monterproduktion</label></li>
+
+              <span class="hide-for-large-up">
+              <li><input id="profileadvertising" type="checkbox"><label for="profileadvertising">Profilreklam</label></li>
+              <li><input id="advertisingagency" type="checkbox"><label for="advertisingagency">Reklambyrå</label></li>
+              <li><input id="roadshow" type="checkbox"><label for="roadshow">Roadshows</label></li>
+              <li><input id="print" type="checkbox"><label for="print">Trycksaker</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="profileadvertising" type="checkbox"><label for="profileadvertising">Profilreklam</label></li>
+              <li><input id="advertisingagency" type="checkbox"><label for="advertisingagency">Reklambyrå</label></li>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="roadshow" type="checkbox"><label for="roadshow">Roadshows</label></li>
+              <li><input id="print" type="checkbox"><label for="print">Trycksaker</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </dd>
+    </dl>
+  </div>
+
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#transportation">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Transporter</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Massa förklarande text.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
+        </div>
+      </a>
+      <div id="transportation" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
+            <ul class="filtering">
+              <li><input id="bus" type="checkbox"><label for="bus">Bussar</label></li>
+              <li><input id="boat" type="checkbox"><label for="boat">Båtar</label></li>
+
+              <span class="hide-for-large-up">
+              <li><input id="airplane" type="checkbox"><label for="airplane">Flyg</label></li>
+              <li><input id="limousine" type="checkbox"><label for="limousine">Limousiner</label></li>
+              <li><input id="tourvehicle" type="checkbox"><label for="tourvehicle">Turnéfordon</label></li>
+              <li><input id="train" type="checkbox"><label for="train">Tåg</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="airplane" type="checkbox"><label for="airplane">Flyg</label></li>
+              <li><input id="limousine" type="checkbox"><label for="limousine">Limousiner</label></li>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="tourvehicle" type="checkbox"><label for="tourvehicle">Turnéfordon</label></li>
+              <li><input id="train" type="checkbox"><label for="train">Tåg</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </dd>
+    </dl>
+  </div>
+
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#technology">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Teknik</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Massa förklarande text.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
+        </div>
+      </a>
+      <div id="technology" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
+            <ul class="filtering">
+              <li><input id="audiovideo" type="checkbox"><label for="audiovideo">Av-teknik &amp; Storbild</label></li>
+              <li><input id="it-webb" type="checkbox"><label for="it-webb">Datorer, Webb &amp; IT</label></li>
+              <li><input id="event-meetingsystem" type="checkbox"><label for="event-meetingsystem">Event &amp; Mötessystem</label></li>
+
+              <span class="hide-for-large-up">
+              <li><input id="mediaproduction" type="checkbox"><label for="mediaproduction">Foto &amp; Filmproduktion</label></li>
+              <li><input id="communicationradio" type="checkbox"><label for="communicationradio">Kommunkationsradio</label></li>
+              <li><input id="audio-lightning" type="checkbox"><label for="audio-lightning">Ljud &amp; Ljusteknik</label></li>
+              <li><input id="audienceresponse" type="checkbox"><label for="audienceresponse">Ljud &amp; Mentometer</label></li>
+              <li><input id="pyro" type="checkbox"><label for="pyro">Ljud &amp; Pyroteknik &amp; Fyrverkeri</label></li>
+              <li><input id="virtualmeetings" type="checkbox"><label for="virtualmeetings">Videokonferens &amp; Virtuella möten</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="mediaproduction" type="checkbox"><label for="mediaproduction">Foto &amp; Filmproduktion</label></li>
+              <li><input id="communicationradio" type="checkbox"><label for="communicationradio">Kommunkationsradio</label></li>
+               <li><input id="audio-lightning" type="checkbox"><label for="audio-lightning">Ljud &amp; Ljusteknik</label></li>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="audienceresponse" type="checkbox"><label for="audienceresponse">Ljud &amp; Mentometer</label></li>
+              <li><input id="pyro" type="checkbox"><label for="pyro">Pyroteknik <br class="show-for-large">&amp; Fyrverkeri</label></li>
+              <li><input id="virtualmeetings" type="checkbox"><label for="virtualmeetings">Videokonferens <br class="show-for-large">&amp; Virtuella möten</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </dd>
+    </dl>
+  </div>
+
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#rent">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Uthyrning</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Massa förklarande text.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
+        </div>
+      </a>
+      <div id="rent" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
+            <ul class="filtering">
+              <li><input id="activityproducts" type="checkbox"><label for="activityproducts">Aktivitetsprodukter</label></li>
+              <li><input id="masquerade" type="checkbox"><label for="masquerade">Maskerad &amp; Kostymer</label></li>
+              <li><input id="machines" type="checkbox"><label for="machines">Maskiner &amp; Utrustning</label></li>
+
+              <span class="hide-for-large-up">
+              <li><input id="fabrics" type="checkbox"><label for="fabrics">Mattor, Tyger &amp; Dekor</label></li>
+              <li><input id="mobiletoilets" type="checkbox"><label for="mobiletoilets">Mobila Toaletter</label></li>
+              <li><input id="furniture-porcelain" type="checkbox"><label for="furniture-porcelain">Möbler &amp; Porslin</label></li>
+              <li><input id="scene" type="checkbox"><label for="scene">Scen &amp; Läktare</label></li>
+              <li><input id="renttechnology" type="checkbox"><label for="renttechnology">Teknikuthyrning</label></li>
+              <li><input id="tent" type="checkbox"><label for="tent">Tält</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="fabrics" type="checkbox"><label for="fabrics">Mattor, Tyger &amp; Dekor</label></li>
+              <li><input id="mobiletoilets" type="checkbox"><label for="mobiletoilets">Mobila Toaletter</label></li>
+              <li><input id="furniture-porcelain" type="checkbox"><label for="furniture-porcelain">Möbler &amp; Porslin</label></li>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="scene" type="checkbox"><label for="scene">Scen &amp; Läktare</label></li>
+              <li><input id="renttechnology" type="checkbox"><label for="renttechnology">Teknikuthyrning</label></li>
+              <li><input id="tent" type="checkbox"><label for="tent">Tält</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </dd>
+    </dl>
+  </div>
+
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#traderelated">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Bransch-relaterat</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Massa förklarande text.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
+        </div>
+      </a>
+      <div id="traderelated" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
+            <ul class="filtering">
+              <li><input id="tradeexpo" type="checkbox"><label for="tradeexpo">Branschmässor</label></li>
+              <li><input id="tradeorganisation" type="checkbox"><label for="tradeorganisation">Branschorganisationer</label></li>
+              <li><input id="trademedia" type="checkbox"><label for="trademedia">Branschtidningar &amp; Böcker</label></li>
+
+              <span class="hide-for-large-up">
+              <li><input id="eventeducation" type="checkbox"><label for="eventeducation">Eventutbildningar</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="eventeducation" type="checkbox"><label for="eventeducation">Eventutbildningar</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
           </div>
         </div>
       </div>
