@@ -1,246 +1,307 @@
-<div class="panelmargin small-12 medium-12 large-9 columns">
-  <dl class="accordion" data-accordion>
-  <dd class="nopadding">
-    <a href="#entertainment">
-      <div class="small-12 columns filterpanel borderbottom">
-        <div class="filterpanel small-8 medium-8 large-4 columns">
-          <h2>Underhållning</h2>
-        </div>
-        <div class="filterpanel small-4 medium-4 large-8 columns text-right">
-          <p class="show-for-large-up">Här hittar du underhållning till alla tillfällen. Du filtrerar listan genom att välja en eller flera kategorier.</p>
-          <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
-        </div>
-      </div>
-    </a>
-    <div id="entertainment" class="content">
-      <div class="small-12 columns filterpanel">
-        <div class="filterpanel small-12 medium-12 large-3 columns">
-          <ul class="filtering">
-            <li><input type="radio" name="filtering" value="All" id="filreingAll"><label for="filteringAll">Alla</label></li>
-            <li><input type="radio" name="filtering" value="Company" id="filreingCompany"><label for="filteringCompany">Företagsevent</label></li>
-            <li><input type="radio" name="filtering" value="Private" id="filreingPrivate"><label for="filteringPrivate">Privat</label></li>
-          </ul>
-        </div>
-        <hr class="hide-for-large-up whiteline">
-        <div class="filterpanel small-12 medium-12 large-3 columns">
-          <ul class="filtering borderleft">
-            <li><input id="artist" type="checkbox"><label for="artist">Artistförmedling</label></li>
-            <li><input id="family" type="checkbox"><label for="family">Barn &amp; Familj</label></li>
-            <li><input id="cirkus" type="checkbox"><label for="cirkus">Cirkus &amp; Variete</label></li>
-            <li><input id="imitation" type="checkbox"><label for="imitation">Imitation &amp; <br class="show-for-large">Lookalike</label></li>
-            <li><input id="broadcaster" type="checkbox"><label for="broadcaster">Konferencier / <br class="show-for-large-up">Programledare</label></li>
-            <li><input id="magic" type="checkbox"><label for="magic">Magi &amp; Trolleri</label></li>
+<div class="row">
 
-            <span class="hide-for-large-up">
-            <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">Middags- och Mingelunderhållning</label></li>
-            <li><input id="partyband" type="checkbox"><label for="partyband">Partyband &amp; Orkestar</label></li>
-            <li><input id="pianobar" type="checkbox"><label for="pianobar">Pianobar</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Pubunderhållning</label></li>
-            <li><input id="showtime" type="checkbox"><label for="showtime">Scenshow / Showtime</label></li>
-            <li><input id="showgroup" type="checkbox"><label for="showgroup">Showgrupper</label></li>
-            <li><input id="standup" type="checkbox"><label for="standup">Standup &amp; Humor</label></li>
-            <li><input id="singers-female" type="checkbox"><label for="singers-female">Sångartister, Kvinnliga</label></li>
-            <li><input id="singers-male" type="checkbox"><label for="singers-male">Sångartister, Manliga</label></li>
-            <li><input id="troubadour" type="checkbox"><label for="troubadour">Trubadur &amp; Vispop</label></li>
-            <li><input id="tv-personalities" type="checkbox"><label for="tv-personalities">TV-kända profiler</label></li>
-            </span>
-          </ul>
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#entertainment">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Underhållning</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Här hittar du underhållning till alla tillfällen. Du filtrerar listan genom att välja en eller flera kategorier.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
         </div>
-        <div class="large-3 columns show-for-large-up">
-          <ul class="filtering">
-            <li><input id="magic" type="checkbox"><label for="magic">Magi &amp; Trolleri</label></li>
-            <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">Middags- och <br class="show-for-large-up">Mingel<span class="show-for-large">-</span><br class="show-for-large">underhållning</label></li>
-            <li><input id="partyband" type="checkbox"><label for="partyband">Partyband &amp; <br class="show-for-large">Orkestar</label></li>
-            <li><input id="pianobar" type="checkbox"><label for="pianobar">Pianobar</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Pub<span class="show-for-large">-</span><br class="show-for-large">underhållning</label></li>
-            <li><input id="showtime" type="checkbox"><label for="showtime">Scenshow / <br class="show-for-large-up">Showtime</label></li>
-          </ul>
-        </div>
-        <div class="large-3 columns show-for-large-up">
-          <ul class="filtering">
-            <li><input id="showgroup" type="checkbox"><label for="showgroup">Showgrupper</label></li>
-            <li><input id="standup" type="checkbox"><label for="standup">Standup &amp; <br class="show-for-large">Humor</label></li>
-            <li><input id="singers-female" type="checkbox"><label for="singers-female">Sångartister, <br class="show-for-large">Kvinnliga</label></li>
-            <li><input id="singers-male" type="checkbox"><label for="singers-male">Sångartister, <br class="show-for-large">Manliga</label></li>
-            <li><input id="troubadour" type="checkbox"><label for="troubadour">Trubadur &amp; <br class="show-for-large">Vispop</label></li>
-            <li><input id="tv-personalities" type="checkbox"><label for="tv-personalities">TV-kända <br class="show-for-large">profiler</label></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </dd>
-  <dl>
-</div>
+      </a>
+      <div id="entertainment" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-3 columns">
+            <ul class="filtering">
+              <li><input type="radio" name="filtering" value="All" id="filteringAll"><label for="filteringAll">Alla</label></li>
+              <li><input type="radio" name="filtering" value="Artist" id="filteringArtist"><label for="filteringArtist">Artistförmedlingar</label></li>
+              <li><input id="1-10" type="checkbox"><label for="1-10">1-10 tusen kr</label></li>
+              <li><input id="10-30" type="checkbox"><label for="10-30">10-30 tusen kr</label></li>
+              <li><input id="30-100" type="checkbox"><label for="30-100">30-100 tusen kr</label></li>
+              <li><input id=">100" type="checkbox"><label for=">100">över 100 tusen kr</label></li>
+            </ul>
+          </div>
+          <hr class="hide-for-large-up whiteline">
+          <div class="filterpanel small-12 medium-12 large-3 columns">
+            <ul class="filtering borderleft">
+              <li><input id="family" type="checkbox"><label for="family">Barn &amp; Familj</label></li>
+              <li><input id="cirkus" type="checkbox"><label for="cirkus">Cirkus &amp; Variete</label></li>
+              <li><input id="dj-karaoke" type="checkbox"><label for="dj-karaoke">DJ:s &amp; Karaoke</label></li>
+              <li><input id="standup" type="checkbox"><label for="standup">Humor &amp; Standup</label></li>
+              <li><input id="imitation" type="checkbox"><label for="imitation">Imitation / <br class="show-for-large">Lookalike</label></li>
 
-<div class="panelmargin small-12 medium-12 large-9 columns">
-  <dl class="accordion" data-accordion>
-  <dd class="nopadding">
-    <a href="#arrangers">
-      <div class="small-12 columns filterpanel borderbottom">
-        <div class="filterpanel small-8 medium-8 large-4 columns">
-          <h2>Arrangörer</h2>
-        </div>
-        <div class="filterpanel small-4 medium-4 large-8 columns text-right">
-          <p class="show-for-large-up">Här hittar du arrangörer som är proffs på att organisera, inspirera och administrera. Du filtrerar listan genom att välja en eller flera kategorier.</p>
-          <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+              <span class="hide-for-large-up">
+              <li><input id="broadcaster" type="checkbox"><label for="broadcaster">Konferencier / <br class="show-for-large-up">Programledare</label></li>
+              <li><input id="magic" type="checkbox"><label for="magic">Magi &amp; Trolleri</label></li>
+              <li><input id="dinnermingelmonter" type="checkbox"><label for="dinnermingelmonter">Middag, Mingel &amp; Monter</label></li>
+              <li><input id="musicalsceneshow" type="checkbox"><label for="musicalsceneshow">Musikalisk Scenshow</label></li>
+              <li><input id="musicbandorchestra" type="checkbox"><label for="musicbandorchestra">Musik, Band &amp; Orkestrar</label></li>
+              <li><input id="pianobar" type="checkbox"><label for="pianobar">Pianobar &amp; Instrumentalister</label></li>
+              <li><input id="spectacularsceneshow" type="checkbox"><label for="spectacularsceneshow">Spektakulär Scenshow</label></li>
+              <li><input id="singartists" type="checkbox"><label for="singartists">Sångartister</label></li>
+              <li><input id="troubadour" type="checkbox"><label for="troubadour">Trubadur</label></li>
+              <li><input id="tv-personalities" type="checkbox"><label for="tv-personalities">TV-kända profiler</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-3 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="broadcaster" type="checkbox"><label for="broadcaster">Konferencier / <br class="show-for-large-up">Programledare</label></li>
+              <li><input id="magic" type="checkbox"><label for="magic">Magi &amp; Trolleri</label></li>
+              <li><input id="dinnermingelmonter" type="checkbox"><label for="dinnermingelmonter">Middag, Mingel <br class="show-for-large">&amp; Monter</label></li>
+              <li><input id="musicalsceneshow" type="checkbox"><label for="musicalsceneshow">Musikalisk <br class="show-for-large">Scenshow</label></li>
+              <li><input id="musicbandorchestra" type="checkbox"><label for="musicbandorchestra">Musik, Band <br class="show-for-large">&amp; Orkestrar</label></li>
+            </ul>
+          </div>
+          <div class="large-3 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="pianobar" type="checkbox"><label for="pianobar">Pianobar &amp; <br class="show-for-large">Instrumentalister</label></li>
+              <li><input id="spectacularsceneshow" type="checkbox"><label for="spectacularsceneshow">Spektakulär <br class="show-for-large">Scenshow</label></li>
+              <li><input id="singartists" type="checkbox"><label for="singartists">Sångartister</label></li>
+              <li><input id="troubadour" type="checkbox"><label for="troubadour">Trubadur</label></li>
+              <li><input id="tv-personalities" type="checkbox"><label for="tv-personalities">TV-kända profiler</label></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </a>
-    <div id="arrangers" class="content">
-      <div class="small-12 columns filterpanel">
-        <div class="filterpanel small-12 medium-12 large-4 columns">
-          <ul class="filtering">
-            <li><input id="artist" type="checkbox"><label for="artist">Affärsresor</label></li>
-            <li><input id="family" type="checkbox"><label for="family">Aktivitetsarrangör</label></li>
-            <li><input id="cirkus" type="checkbox"><label for="cirkus">Bröllpåskoordinator / <br class="show-for-large-up">Festarrangör</label></li>
-            <li><input id="imitation" type="checkbox"><label for="imitation">Eventarrangör / Strateg</label></li>
+    </dd>
+    </dl>
+  </div>
 
-            <span class="hide-for-large-up">
-            <li><input id="broadcaster" type="checkbox"><label for="broadcaster">Externa Konferensarrangör / Programledare</label></li>
-            <li><input id="magic" type="checkbox"><label for="magic">Konsertarrangör</label></li>
-            <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">Management</label></li>
-            <li><input id="partyband" type="checkbox"><label for="partyband">Mässarrangör</label></li>
-            <li><input id="pianobar" type="checkbox"><label for="pianobar">Nöjesarrangör / Artistbokare</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Virtuella möten / Onlineteknik</label></li>
-            </span>
-          </ul>
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#arrangers">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Arrangörer</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Här hittar du arrangörer som är proffs på att organisera, inspirera och administrera. Du filtrerar listan genom att välja en eller flera kategorier.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
         </div>
-        <div class="large-4 columns show-for-large-up">
-          <ul class="filtering">
-            <li><input id="broadcaster" type="checkbox"><label for="broadcaster">Externa <br class="show-for-large">Konferensarrangör / <br>Programledare</label></li>
-            <li><input id="magic" type="checkbox"><label for="magic">Konsertarrangör</label></li>
-            <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">Management</label></li>
-            <li><input id="partyband" type="checkbox"><label for="partyband">Mässarrangör</label></li>
-          </ul>
-        </div>
-        <div class="large-4 columns show-for-large-up">
-          <ul class="filtering">
-            <li><input id="pianobar" type="checkbox"><label for="pianobar">Nöjesarrangör / <br>Artistbokare</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Virtuella möten / <br>Onlineteknik</label></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </dd>
-  <dl>
-</div>
+      </a>
+      <div id="arrangers" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
+            <ul class="filtering">
+              <li><input id="businesstravel" type="checkbox"><label for="businesstravel">Affärsresor</label></li>
+              <li><input id="activityarranger" type="checkbox"><label for="activityarranger">Aktivitetsarrangör</label></li>
+              <li><input id="wedding-party-arranger" type="checkbox"><label for="wedding-party-arranger">Bröllpåskoordinator / <br class="show-for-large-up">Festarrangör</label></li>
+              <li><input id="eventarranger" type="checkbox"><label for="eventarranger">Eventarrangör / Strateg</label></li>
 
-<div class="panelmargin small-12 medium-12 large-9 columns">
-  <dl class="accordion" data-accordion>
-  <dd class="nopadding">
-    <a href="#activities">
-      <div class="small-12 columns filterpanel borderbottom">
-        <div class="filterpanel small-8 medium-8 large-4 columns">
-          <h2>Aktiviteter</h2>
-        </div>
-        <div class="filterpanel small-4 medium-4 large-8 columns text-right">
-          <p class="show-for-large-up">Här hittar du aktiviteter till alla tillfällen. Du filtrerar listan genom att välja en eller flera kategorier.</p>
-          <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+              <span class="hide-for-large-up">
+              <li><input id="external-arranger" type="checkbox"><label for="external-arranger">Externa Konferensarrangör / Programledare</label></li>
+              <li><input id="consert-arranger" type="checkbox"><label for="consert-arranger">Konsertarrangör</label></li>
+              <li><input id="management" type="checkbox"><label for="management">Management</label></li>
+              <li><input id="expoarranger" type="checkbox"><label for="expoarranger">Mässarrangör</label></li>
+              <li><input id="entertainment-artistarranger" type="checkbox"><label for="entertainment-artistarranger">Nöjesarrangör / Artistbokare</label></li>
+              <li><input id="virtual-onlinetechnology" type="checkbox"><label for="virtual-onlinetechnology">Virtuella möten / Onlineteknik</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="external-arranger" type="checkbox"><label for="external-arranger">Externa <br class="show-for-large">Konferensarrangör / <br class="show-for-large">Programledare</label></li>
+              <li><input id="consert-arranger" type="checkbox"><label for="consert-arranger">Konsertarrangör</label></li>
+              <li><input id="management" type="checkbox"><label for="management">Management</label></li>
+              <li><input id="expoarranger" type="checkbox"><label for="expoarranger">Mässarrangör</label></li>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="entertainment-artistarranger" type="checkbox"><label for="entertainment-artistarranger">Nöjesarrangör / Artistbokare</label></li>
+              <li><input id="virtual-onlinetechnology" type="checkbox"><label for="virtual-onlinetechnology">Virtuella möten / <br class="show-for-large">Onlineteknik</label></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </a>
-    <div id="activities" class="content">
-      <div class="small-12 columns filterpanel">
-        <div class="filterpanel small-12 medium-12 large-4 columns">
-          <ul class="filtering">
-            <li><input id="artist" type="checkbox"><label for="artist">Aktivitetsarrangörer</label></li>
-            <li><input id="family" type="checkbox"><label for="family">Barn &amp; Familj</label></li>
-            <li><input id="cirkus" type="checkbox"><label for="cirkus">Djur</label></li>
-            <li><input id="imitation" type="checkbox"><label for="imitation">Hav &amp; Sjö</label></li>
-            <li><input id="imitation" type="checkbox"><label for="imitation">Kreativt Skapande</label></li>
+    </dd>
+    </dl>
+  </div>
 
-            <span class="hide-for-large-up">
-            <li><input id="broadcaster" type="checkbox"><label for="broadcaster">Kroppo &amp; Själ</label></li>
-            <li><input id="magic" type="checkbox"><label for="magic">Lek, Tävling &amp; Uppdrag</label></li>
-            <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">Mat &amp; Dryckesaktiviteter</label></li>
-            <li><input id="partyband" type="checkbox"><label for="partyband">Motor</label></li>
-            <li><input id="pianobar" type="checkbox"><label for="pianobar">Musik</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Sport</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Upplevelser i stan</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Vi kommer till er-aktiviteter</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Äventyr &amp; Vildmark</label></li>
-            </span>
-          </ul>
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#activities">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Aktiviteter</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Här hittar du aktiviteter till alla tillfällen. Du filtrerar listan genom att välja en eller flera kategorier.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
         </div>
-        <div class="large-4 columns show-for-large-up">
-          <ul class="filtering">
-            <li><input id="broadcaster" type="checkbox"><label for="broadcaster">Kroppo &amp; Själ</label></li>
-            <li><input id="magic" type="checkbox"><label for="magic">Lek, Tävling &amp; Uppdrag</label></li>
-            <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">Mat &amp; Dryckesaktiviteter</label></li>
-            <li><input id="partyband" type="checkbox"><label for="partyband">Motor</label></li>
-            <li><input id="pianobar" type="checkbox"><label for="pianobar">Musik</label></li>
-          </ul>
-        </div>
-        <div class="large-4 columns show-for-large-up">
-          <ul class="filtering">
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Sport</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Upplevelser i stan</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Vi kommer till <br class="show-for-large">er-aktiviteter</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Äventyr &amp; Vildmark</label></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </dd>
-  <dl>
-</div>
+      </a>
+      <div id="activities" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-4 columns">
+            <ul class="filtering">
+              <li><input id="children-family" type="checkbox"><label for="children-family">Barn &amp; Familj</label></li>
+              <li><input id="dance-music" type="checkbox"><label for="dance-music">Dans &amp; Musik</label></li>
+              <li><input id="animals" type="checkbox"><label for="animals">Djur</label></li>
+              <li><input id="ocean-sea" type="checkbox"><label for="ocean-sea">Hav &amp; Sjö</label></li>
+              <li><input id="creative" type="checkbox"><label for="creative">Kreativt Skapande</label></li>
 
-<div class="panelmargin small-12 medium-12 large-9 columns">
-  <dl class="accordion" data-accordion>
-  <dd class="nopadding">
-    <a href="#speeches">
-      <div class="small-12 columns filterpanel borderbottom">
-        <div class="filterpanel small-8 medium-8 large-4 columns">
-          <h2>Föreläsare &amp; Talare</h2>
-        </div>
-        <div class="filterpanel small-4 medium-4 large-8 columns text-right">
-          <p class="show-for-large-up">Här hittar du talare och förelasare samt tips på föreläsningar inom alla områden. Du filtrerar listan genom att välja en eller flera kategorier.</p>
-          <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+              <span class="hide-for-large-up">
+              <li><input id="body-soul" type="checkbox"><label for="body-soul">Kroppo &amp; Själ</label></li>
+              <li><input id="games" type="checkbox"><label for="games">Lek, Tävling &amp; Uppdrag</label></li>
+              <li><input id="food-drinks" type="checkbox"><label for="food-drinks">Mat &amp; Dryckesaktiviteter</label></li>
+              <li><input id="motor" type="checkbox"><label for="motor">Motor</label></li>
+              <li><input id="entertainment-culture" type="checkbox"><label for="entertainment-culture">Nöje &amp; Kultur</label></li>
+              <li><input id="sport-adventure" type="checkbox"><label for="sport-adventure">Sport, Äventyr &amp; Vildmark</label></li>
+              <li><input id="cityevents" type="checkbox"><label for="cityevents">Upplevelser i stan</label></li>
+              <li><input id="your-location-event" type="checkbox"><label for="your-location-event">Vi kommer till er-aktiviteter</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="body-soul" type="checkbox"><label for="body-soul">Kroppo &amp; Själ</label></li>
+              <li><input id="games" type="checkbox"><label for="games">Lek, Tävling &amp; Uppdrag</label></li>
+              <li><input id="food-drinks" type="checkbox"><label for="food-drinks">Mat &amp; Dryckesaktiviteter</label></li>
+              <li><input id="motor" type="checkbox"><label for="motor">Motor</label></li>
+              <li><input id="entertainment-culture" type="checkbox"><label for="entertainment-culture">Nöje &amp; Kultur</label></li>
+            </ul>
+          </div>
+          <div class="large-4 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="sport-adventure" type="checkbox"><label for="sport-adventure">Sport, Äventyr &amp; Vildmark</label></li>
+              <li><input id="cityevents" type="checkbox"><label for="cityevents">Upplevelser i stan</label></li>
+              <li><input id="your-location-event" type="checkbox"><label for="your-location-event">Vi kommer till er-aktiviteter</label></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </a>
-    <div id="speeches" class="content">
-      <div class="small-12 columns filterpanel">
-        <div class="filterpanel small-12 medium-12 large-3 columns">
-          <ul class="filtering">
-            <li><input type="radio" name="filtering" value="Lecturer" id="filreingLecturer"><label for="filteringLecturer">Föreläsare</label></li>
-            <li><input type="radio" name="filtering" value="LecturingTips" id="filreingLecturingTips"><label for="filteringLecturingTips">Föreläsnings-Tips</label></li>
-            <li><input type="radio" name="filtering" value="SpeechMediation" id="filreingSpeechMediation"><label for="filteringSpeechMediation">Talarförmedling</label></li>
-            <li><input type="radio" name="filtering" value="Moderator" id="filreingModerator"><label for="filteringModerator">Moderator</label></li>
-          </ul>
-        </div>
-        <hr class="hide-for-large-up whiteline">
-        <div class="filterpanel small-12 medium-12 large-3 columns">
-          <ul class="filtering borderleft">
-            <li><input id="artist" type="checkbox"><label for="artist">Affärsutveckling</label></li>
-            <li><input id="family" type="checkbox"><label for="family">Friskvård &amp; Hälsa</label></li>
-            <li><input id="cirkus" type="checkbox"><label for="cirkus">Kommunikation</label></li>
-            <li><input id="imitation" type="checkbox"><label for="imitation">Personlig <br class="show-for-large">Utveckling</label></li>
+    </dd>
+    </dl>
+  </div>
 
-            <span class="hide-for-large-up">
-            <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">På Engelska</label></li>
-            <li><input id="partyband" type="checkbox"><label for="partyband">Stress &amp; Konflikthantering</label></li>
-            <li><input id="pianobar" type="checkbox"><label for="pianobar">Utbildning</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Äventyr & Resor</label></li>
-            <li><input id="showtime" type="checkbox"><label for="showtime">Övrigt</label></li>
-            </span>
-          </ul>
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#speeches">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Föreläsare &amp; Talare</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Här hittar du talare och förelasare samt tips på föreläsningar inom alla områden. Du filtrerar listan genom att välja en eller flera kategorier.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
         </div>
-        <div class="large-3 columns show-for-large-up">
-          <ul class="filtering">
-            <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">På Engelska</label></li>
-            <li><input id="partyband" type="checkbox"><label for="partyband">Stress &amp; <br class="show-for-large">Konflikthantering</label></li>
-            <li><input id="pianobar" type="checkbox"><label for="pianobar">Utbildning</label></li>
-            <li><input id="pub-entertainment" type="checkbox"><label for="pub-entertainment">Äventyr & <br class="show-for-large">Resor</label></li>
-          </ul>
-        </div>
-        <div class="large-3 columns show-for-large-up">
-          <ul class="filtering">
-            <li><input id="showtime" type="checkbox"><label for="showtime">Övrigt</label></li>
-          </ul>
+      </a>
+      <div id="speeches" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-3 columns">
+            <ul class="filtering">
+              <li><input type="radio" name="filtering" value="Lecturer" id="filteringLecturer"><label for="filteringLecturer">Föreläsare</label></li>
+              <li><input type="radio" name="filtering" value="LecturingTips" id="filteringLecturingTips"><label for="filteringLecturingTips">Föreläsnings-Tips</label></li>
+              <li><input type="radio" name="filtering" value="SpeechMediation" id="filteringSpeechMediation"><label for="filteringSpeechMediation">Talarförmedling</label></li>
+              <li><input type="radio" name="filtering" value="Moderator" id="filteringModerator"><label for="filteringModerator">Moderator</label></li>
+            </ul>
+          </div>
+          <hr class="hide-for-large-up whiteline">
+          <div class="filterpanel small-12 medium-12 large-3 columns">
+            <ul class="filtering borderleft">
+              <li><input id="businessdevelopment" type="checkbox"><label for="businessdevelopment">Affärsutveckling <br class="show-for-large">&amp; Service</label></li>
+              <li><input id="health" type="checkbox"><label for="health">Friskvård &amp; Hälsa</label></li>
+              <li><input id="communication" type="checkbox"><label for="communication">Kommunikation <br class="show-for-large">&amp; Retorik</label></li>
+              <li><input id="personaldevelopment" type="checkbox"><label for="personaldevelopment">Personlig <br class="show-for-large">Utveckling</label></li>
+
+              <span class="hide-for-large-up">
+              <li><input id="inenglish" type="checkbox"><label for="inenglish">På Engelska</label></li>
+              <li><input id="stressconflicts" type="checkbox"><label for="stressconflicts">Stress &amp; Konflikthantering</label></li>
+              <li><input id="education" type="checkbox"><label for="education">Utbildning</label></li>
+              <li><input id="adventuretravels" type="checkbox"><label for="adventuretravels">Äventyr & Resor</label></li>
+              <li><input id="other" type="checkbox"><label for="other">Övrigt</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-3 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">På Engelska</label></li>
+              <li><input id="partyband" type="checkbox"><label for="partyband">Stress &amp; <br class="show-for-large">Konflikthantering</label></li>
+              <li><input id="pianobar" type="checkbox"><label for="pianobar">Utbildning</label></li>
+              <li><input id="musicbandorchestra" type="checkbox"><label for="musicbandorchestra">Äventyr & <br class="show-for-large">Resor</label></li>
+            </ul>
+          </div>
+          <div class="large-3 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="spectacularsceneshow" type="checkbox"><label for="spectacularsceneshow">Övrigt</label></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </dd>
-  <dl>
+    </dd>
+    </dl>
+  </div>
+
+  <div class="panelmargin small-12 medium-12 large-12 columns">
+    <dl class="accordion" data-accordion>
+    <dd class="nopadding">
+      <a href="#speeches">
+        <div class="small-12 columns filterpanel borderbottom">
+          <div class="filterpanel small-8 medium-8 large-4 columns">
+            <h2>Föreläsare &amp; Talare</h2>
+          </div>
+          <div class="filterpanel small-4 medium-4 large-8 columns text-right">
+            <p class="show-for-large-up">Här hittar du talare och förelasare samt tips på föreläsningar inom alla områden. Du filtrerar listan genom att välja en eller flera kategorier.</p>
+            <p class="hide-for-large-up">Dölj/Visa<br>filtrering</p>
+          </div>
+        </div>
+      </a>
+      <div id="speeches" class="content">
+        <div class="small-12 columns filterpanel">
+          <div class="filterpanel small-12 medium-12 large-3 columns">
+            <ul class="filtering">
+              <li><input type="radio" name="filtering" value="Lecturer" id="filteringLecturer"><label for="filteringLecturer">Föreläsare</label></li>
+              <li><input type="radio" name="filtering" value="LecturingTips" id="filteringLecturingTips"><label for="filteringLecturingTips">Föreläsnings-Tips</label></li>
+              <li><input type="radio" name="filtering" value="SpeechMediation" id="filteringSpeechMediation"><label for="filteringSpeechMediation">Talarförmedling</label></li>
+              <li><input type="radio" name="filtering" value="Moderator" id="filteringModerator"><label for="filteringModerator">Moderator</label></li>
+            </ul>
+          </div>
+          <hr class="hide-for-large-up whiteline">
+          <div class="filterpanel small-12 medium-12 large-3 columns">
+            <ul class="filtering borderleft">
+              <li><input id="businessdevelopment" type="checkbox"><label for="businessdevelopment">Affärsutveckling <br class="show-for-large">&amp; Service</label></li>
+              <li><input id="health" type="checkbox"><label for="health">Friskvård &amp; Hälsa</label></li>
+              <li><input id="communication" type="checkbox"><label for="communication">Kommunikation <br class="show-for-large">&amp; Retorik</label></li>
+              <li><input id="personaldevelopment" type="checkbox"><label for="personaldevelopment">Personlig <br class="show-for-large">Utveckling</label></li>
+
+              <span class="hide-for-large-up">
+              <li><input id="inenglish" type="checkbox"><label for="inenglish">På Engelska</label></li>
+              <li><input id="stressconflicts" type="checkbox"><label for="stressconflicts">Stress &amp; Konflikthantering</label></li>
+              <li><input id="education" type="checkbox"><label for="education">Utbildning</label></li>
+              <li><input id="adventuretravels" type="checkbox"><label for="adventuretravels">Äventyr & Resor</label></li>
+              <li><input id="other" type="checkbox"><label for="other">Övrigt</label></li>
+              </span>
+            </ul>
+          </div>
+          <div class="large-3 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="mingle-entertainment" type="checkbox"><label for="mingle-entertainment">På Engelska</label></li>
+              <li><input id="partyband" type="checkbox"><label for="partyband">Stress &amp; <br class="show-for-large">Konflikthantering</label></li>
+              <li><input id="pianobar" type="checkbox"><label for="pianobar">Utbildning</label></li>
+              <li><input id="musicbandorchestra" type="checkbox"><label for="musicbandorchestra">Äventyr & <br class="show-for-large">Resor</label></li>
+            </ul>
+          </div>
+          <div class="large-3 columns show-for-large-up">
+            <ul class="filtering">
+              <li><input id="spectacularsceneshow" type="checkbox"><label for="spectacularsceneshow">Övrigt</label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </dd>
+    </dl>
+  </div>
+
 </div>
