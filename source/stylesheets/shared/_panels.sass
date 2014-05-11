@@ -5,8 +5,20 @@
   -ms-transition: ($value)
   transition: ($value)
 
-.panelrow
-  margin: 0 !important
+@media (min-width:640px) and (max-width:1024px)
+
+  .panelrow
+
+    .medium-6:nth-child(1)
+    
+      .panelcontainer
+        margin-right: -10px
+
+    .medium-6:nth-child(2)
+
+      .panelcontainer
+        margin-left: -10px
+
 
 .panel
   background-color: white
